@@ -1,0 +1,16 @@
+name: Lint
+
+on:
+  workflow_dispatch:
+  # Allows you to reuse this workflow from other workflows
+  workflow_call:
+
+jobs:
+  lint:
+    runs-on: [ self-hosted ]
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Invoke lint script
+        run: ./ci-scripts/lint.sh
