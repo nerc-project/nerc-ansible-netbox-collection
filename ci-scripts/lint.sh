@@ -8,4 +8,4 @@ ${_PODMAN_RUN} \
   bash -l -c \
     ". /srv/docker-ansible/env/bin/activate;
      $GALAXY_INSTALL;
-     ansible-lint $@
+     ansible-lint $@"
