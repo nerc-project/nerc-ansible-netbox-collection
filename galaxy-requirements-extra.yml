@@ -1,0 +1,5 @@
+---
+collections:
+  - name: https://github.com/containers/ansible-podman-collections.git
+    type: git
+    version: 7031de6a6b2b8d5f7d3b1444efa27b332b5ddae2
