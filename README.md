@@ -21,7 +21,7 @@ Installs netbox containers on a host.
 Example:
 
 ```sh
-- name: deploy nagios
+- name: deploy netbox
   hosts: localhost
   gather_facts: false
   roles:
