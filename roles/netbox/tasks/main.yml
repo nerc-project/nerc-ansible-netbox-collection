@@ -160,8 +160,8 @@
         --user netbox < "{{ netbox_postgres_dbrestore }}"
   args:
     executable: bash
-  register: dbrestore_output
-  changed_when: dbrestore_output
+  register: netbox_dbrestore_output
+  changed_when: netbox_dbrestore_output
   when: netbox_postgres_dbrestore != ""
 
 - name: Set up Redis server
